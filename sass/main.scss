@@ -1,0 +1,74 @@
+@use "./colors";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+	font-family: "Outfit", sans-serif;
+    background-color: colors.$lightGray;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+// CARD
+.card {
+    position: relative;
+    padding: 2em;
+    max-width: 400px;
+    background-color: colors.$white;
+    border-radius: 25px;
+
+    &__img {
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    &__info {
+        padding: 2em 1em;
+        text-align: center;
+    }
+    
+    &__info-header {
+        font-size: 1.8rem;
+        color: colors.$darkBlue;
+    }
+    
+    &__info-text {
+        margin-top: 1em;
+        font-size: 2rem;
+        color: colors.$grayishBlue;
+    }
+}
+
+
+
+// Frotnend Mentor styles
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
